@@ -20,7 +20,7 @@ provider "github" {
  
 
 
-resource "github_repository" "github_repository" {
+resource "github_repository" "git_hub_repo" {
   name        = "myemployeecode"
   description = "My awesome codebase for myemployeecode"
 
