@@ -16,4 +16,13 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {
   token = "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"
+} 
+ 
+
+
+resource "github_repository" "github_repository" {
+  name        = "myemployeecode"
+  description = "My awesome codebase for myemployeecode"
+
+  visibility = "public"
 }
