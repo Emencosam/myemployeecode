@@ -12,3 +12,14 @@ resource "github_repository" "git_hub_repo" {
 
   visibility = "public"
 }
+
+
+resource "aws_instance" "test-3" {
+  ami           = "ami-0aa7d40eeae50c9a9"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "peniel"
+  }
+}
+
+
